@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Modesty</title>
 </head>
 <body>
@@ -28,7 +30,7 @@
             </nav>
         </header>
 
-        <div class="modesty-content">
+        <div class="modesty-content wow animate__animated animate__fadeIn" data-wow-delay="1s">
             <h1>Que es Modesty?</h1>
             <video src="../assets/videos/video-tesoros.mov"  autoplay muted controls>
                 Lo sentimos. Este vídeo no puede ser reproducido en tu navegador 
@@ -52,5 +54,8 @@
         </footer>
 
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>

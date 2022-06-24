@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Modesty</title>
 </head>
 <body>
@@ -31,7 +33,7 @@
 
 
 
-        <div class="form-container">
+        <div class="form-container wow animate__animated animate__fadeIn" data-wow-delay="1s">
             <h2>Contacto</h2>
             <form>
                 <div class="wrapper">
@@ -61,8 +63,10 @@
                         <textarea id="msg" rows="10"></textarea>
                     </div>
                 </div>
-
-                <input type="submit" name="" value="Enviar">
+                
+                <div class="submit">
+                    <input type="submit" name="" value="Enviar">
+                </div>
             </form>
         </div>
 
@@ -83,5 +87,8 @@
         </footer>
 
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>
