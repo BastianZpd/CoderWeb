@@ -4,53 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <title>Modesty</title>
+    <title>Modesty & Tesoros</title>
 </head>
 <body>
-    <div class="galeria-container">
-        <header>
-            <nav>
-                <a href="../index.html"><h1>Modesty & Tesoros</h1></a>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/images/Logo.jpeg" alt="" class="logo" width="100px" height="auto"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="menu-icon"><img src="../assets/images/menu.png" alt=""></i>
-                </label>
-
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./tesoros.html">Tesoros</a></li>
-                    <li><a href="./modesty.html">Modesty</a></li>
-                    <li><a href="./galeria.html" class="navActive">Galeria</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="img-container wow animate__animated animate__fadeIn" data-wow-delay="1s">
-                <img src="../assets/images/gal1.jpg" width="300" height="auto" alt="Imagen de galeria 1">
-                <img src="../assets/images/gal2.jpg" width="300" height="auto" alt="Imagen de galeria 2">
-                <img src="../assets/images/gal3.jpg" width="300" height="auto" alt="Imagen de galeria 3">
-                <img src="../assets/images/gal4.jpg" width="300" height="auto" alt="Imagen de galeria 4">
-                <img src="../assets/images/gal5.jpg" width="300" height="auto" alt="Imagen de galeria 5">
-                <img src="../assets/images/gal6.jpg" width="300" height="auto" alt="Imagen de galeria 6">        
-                <img src="../assets/images/gal7.jpg" width="300" height="auto" alt="Imagen de galeria 7">
-                <img src="../assets/images/gal8.jpg" width="300" height="auto" alt="Imagen de galeria 8">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./tesoros.html">Tesoros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./modesty.html">Modesty</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link mx-4" href="./galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./contactanos.html">Contactanos</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <footer>
-            <div>
-                <p>Todos los derechos reservados</p>
-                <p>Modesty & Tesoros de Verdad S.A</p>
+    <div class="container-fluid px-5">
+        <div class="row my-5">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img src="../assets/images/gal4.jpg" class="gal-img w-100 shadow-1-strong rounded mb-4" alt="Blusa negra" data-aos="zoom-in" data-aos-duration="1500"/>
+                <img src="../assets/images/gal2.jpg" class="gal-img w-100 shadow-1-strong rounded mb-4" alt="Blusa cafe" data-aos="zoom-in-up" data-aos-duration="1500"/>
             </div>
-        </footer>
-
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="../assets/images/gal1.jpg" class="gal-img w-100 shadow-1-strong rounded mb-4" alt="Vestido flores" data-aos="zoom-in-up" data-aos-duration="1500"/>
+                <img src="../assets/images/gal5.jpg" class="gal-img w-100 shadow-1-strong rounded mb-4" alt="Vestido flores" data-aos="zoom-in" data-aos-duration="1500"/>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="../assets/images/gal6.jpg" class="gal-img w-100 shadow-1-strong rounded mb-4" alt="Vestido rojo" data-aos="zoom-in" data-aos-duration="1500"/>
+                <img src="../assets/images/gal3.jpg" class="gal-img w-100 shadow-1-strong rounded mb-4" alt="Vestido girasoles" data-aos="zoom-in-up" data-aos-duration="1500"/>
+            </div>
+        </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>new WOW().init();</script>
+
+    <footer class="footer text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="text-uppercase">Modesty & Tesoros</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                        aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3 footer-text">
+            © 2022 Copyright:
+            <a class="text-dark" href="./index.html">Modesty & Tesoros</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -4,78 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./bootstrap/js/jquery.slim.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <title>Modesty</title>
+    <title>Modesty & Tesoros</title>
 </head>
 <body>
-    <div class="grid-container">
-        <header>
-            <nav>
-                <a href="./index.html"><h1>Modesty & Tesoros</h1></a>
 
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="menu-icon"><img src="./assets/images/menu.png" alt=""></i>
-                </label>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="./index.html"><img src="./assets/images/Logo.jpeg" alt="Modesty Logo" class="logo" width="100px" height="auto"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <ul>
-                    <li><a href="./index.html" class="navActive">Inicio</a></li>
-                    <li><a href="./pages/tesoros.html">Tesoros</a></li>
-                    <li><a href="./pages/modesty.html">Modesty</a></li>
-                    <li><a href="./pages/galeria.html">Galeria</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="banner">
-            <img src="./assets/images/Banner.jpg" width="100%" alt="">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link mx-4" href="./index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./pages/tesoros.html">Tesoros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./pages/modesty.html">Modesty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./pages/galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./pages/contactanos.html">Contactanos</a>
+                </li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="card-container">
-            <div class="card card-modesty wow animate__animated animate__fadeIn" data-wow-delay="1s">
-                <h3>Modesty</h3>
-                <img src="./assets/images/card-modesty.jpg" width="80%" alt="">
-                <p>Modesty es una tienda dedicada a la venta de vestuario femenino modesto. Acá encontrarás lo que siempre buscabas. <br><br> Ropa linda, modesta y a tu alcance, en ella encontrarás además muchos artículos de regalos para momentos especiales.</p>
+    <div id="carouselFadeExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active overflow-auto">
+                <img class="d-block w-100 overflow-hidden" src="./assets/images/Banner.jpg" alt="Banner 1" data-holder-rendered="true">
             </div>
-            <div class="card card-tesoros wow animate__animated animate__fadeIn" data-wow-delay="1s">
-                <h3>Tesoros</h3>
-                <img src="./assets/images/card-tesoros.jpg" width="80%" alt="">
-                <p>Tesoros de verdad es una tienda dedicada a la venta de productos religiosos De la Iglesia de Jesucristo de los santo de los últimos días. En ella encontrarás además muchos artículos de regalos para momentos especiales.  <br>
-                Quieres dar un regalo con sentido, eres bienvenido a nuestra tienda</p>
-            </div>
-            <div class="card card-galeria wow animate__animated animate__fadeIn" data-wow-delay="1s">
-                <h3>Galeria</h3>
-                <img src="./assets/images/card-galeria.jpg" width="80%" alt="">
-                <p>En esta galería de fotos podrás encontrar los productos de ambas tiendas. Revisa todos nuestros productos de ambas tiendas!, tanto Modesty como Tesoros de Verdad, y dejanos tu comentario en la pagina de contacto. <br>
-                Bienvenidos!</p>
-            </div>
-
-            <div class="img-index wow animate__animated animate__fadeIn" data-wow-delay="1s">
-                <img src="./assets/images/img-index.jpg" width="80%" alt="">
-            </div>
-            <div class="info-index wow animate__animated animate__fadeIn" data-wow-delay="1s">
-                <p> Mi nombre es Valentina , soy psicóloga de profesión y tengo una familia compuesta por 4 hermosos hijos, hemos creado Modesty inspirados en nuestras 3 hijas a quienes les encanta vestirse bien. <br>
-                    Modesty nace debido a una necesidad que he observado en las mujeres a mi alrededor, querer vestirse linda pero a la vez modesta, una combinación difícil de encontrar fácilmente hoy en día. <br>
-                    Se lo desafiante que es encontrar ropa que cumpla con nuestros gustos, normas y expectativas, normalmente recorrimos muchos lugares para encontrar una prenda que nos quede cómoda, que nos haga sentir bien y que además esté a nuestro alcance. <br><br>
-                    Nuestra marca busca representar este estilo de vestir, queremos satisfacer los gustos de cada mujer, aunque sabemos que esto puede ser complejo, ya que somos todas tan distintas, pero aún así aceptamos el desafío de poder lograrlo, con el tiempo y a medida que vayamos escuchando sus opiniones y sugerencias.
-                </p>
+            <div class="carousel-item overflow-hidden">
+                <img class="d-block w-100 overflow-hidden" src="./assets/images/Banner2.jpg" alt="Banner 2" data-holder-rendered="true">
             </div>
         </div>
-
-        <footer>
-            <div>
-                <p>Todos los derechos reservados</p>
-                <p>Modesty & Tesoros de Verdad S.A</p>
-            </div>
-        </footer>
-
+        <a class="carousel-control-prev" href="#carouselFadeExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselFadeExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>new WOW().init();</script>
+
+    <div class="container-fluid">
+        <div class="row jcse mt-5">
+            <div class="card col-8 col-xl-3 mb-5" style="width: 18rem;" data-aos="fade-up">
+                <img src="./assets/images/card-modesty.jpg" class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Modesty</h5>
+                    <p class="card-text">Modesty es una tienda dedicada a la venta de vestuario femenino modesto. Acá encontrarás lo que siempre buscabas. <br><br>
+                        Ropa linda, modesta y  a tu alcance, en ella encontrarás además muchos artículos de regalos para momentos especiales.
+                    </p>
+                    <a href="./pages/modesty.html" class="btn btn-primary">Ver Modesty</a>
+                </div>
+            </div>    
+            <div class="card col-8 col-xl-3 mb-5" style="width: 18rem;" data-aos="fade-up">
+                <img src="./assets/images/card-tesoros.jpg" class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tesoros</h5>
+                    <p class="card-text">Tesoros de verdad es una tienda dedicada a la venta de productos religiosos De la Iglesia de Jesucristo de los santo de los últimos días. En ella encontrarás además muchos artículos de regalos para momentos especiales.  <br>
+                        Quieres dar un regalo con sentido, eres bienvenido a nuestra tienda</p>
+                    <a href="./pages/tesoros.html" class="btn btn-primary">Ver Tesoros</a>
+                </div>
+            </div> 
+            <div class="card col-8 col-xl-3 mb-5" style="width: 18rem;" data-aos="fade-up">
+                <img src="./assets/images/card-galeria.jpg" class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Galeria</h5>
+                    <p class="card-text">En esta galería de fotos podrás encontrar los productos de ambas tiendas. Revisa todos nuestros productos de ambas tiendas!, tanto Modesty como Tesoros de Verdad, y dejanos tu comentario en la pagina de contacto. <br><br>
+                        Bienvenidos!</p>
+                    <a href="./pages/galeria.html" class="btn btn-primary">Ver Galeria</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row jcse mb-5">
+            <div class="col-10 col-xl-5 mb-5" data-aos="fade-down">
+                <img src="./assets/images/img-index.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-10 col-xl-5 d-flex flex-wrap align-content-center" data-aos="fade-up">
+                <p class="text-justify">Mi nombre es Valentina , soy psicóloga de profesión y tengo una familia compuesta por 4 hermosos hijos, hemos creado Modesty inspirados en nuestras 3 hijas a quienes les encanta vestirse bien. <br>
+                Modesty nace debido a una necesidad que he observado en las mujeres a mi alrededor, querer vestirse linda pero a la vez modesta, una combinación difícil de encontrar fácilmente hoy en día. <br>
+                Se lo desafiante que es encontrar ropa que cumpla con nuestros gustos, normas y expectativas, normalmente recorrimos muchos lugares para encontrar una prenda que nos quede cómoda, que nos haga sentir bien y que además esté a nuestro alcance. <br><br>
+                Nuestra marca busca representar este estilo de vestir, queremos satisfacer los gustos de cada mujer, aunque sabemos que esto puede ser complejo, ya que somos todas tan distintas, pero aún así aceptamos el desafío de poder lograrlo, con el tiempo y a medida que vayamos escuchando sus opiniones y sugerencias.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-12">
+                    <h5 class="text-uppercase">Modesty & Tesoros</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                        molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                        aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3 footer-text">
+            © 2022 Copyright:
+            <a class="text-dark" href="./index.html">Modesty & Tesoros</a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

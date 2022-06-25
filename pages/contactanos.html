@@ -24,7 +24,7 @@
                 <li class="nav-item">
                     <a class="nav-link mx-4" href="../index.html">Inicio</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link mx-4" href="./tesoros.html">Tesoros</a>
                 </li>
                 <li class="nav-item">
@@ -34,35 +34,45 @@
                     <a class="nav-link mx-4" href="./galeria.html">Galeria</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-4" href="./contactanos.html">Contactanos</a>
+                    <a class="nav-link mx-4 active" href="./contactanos.html">Contactanos</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <div class="container my-5">
+        <div class="text-center my-5 ">
+            <h1>Formulario de contacto</h1>
+        </div>
 
-    <div class="container-fluid">
-        <div class="row jcse my-5">
-            <div class="col-10 col-xl-5 embed-responsive embed-responsive-4by3" data-aos="fade-down">
-                <video src="../assets/videos/video-tesoros.mov"  autoplay muted controls>
-                    Lo sentimos. Este vídeo no puede ser reproducido en tu navegador 
-                </video>
+        <div class="row justify-content-center">
+            <div class="col-10 mb-5">
+                <div class="form-group" data-aos="fade-down">
+                    <label for="form_name">Nombres *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Ingresa tu nombre aqui *" required="required" data-error="Firstname is required.">
+                </div>
             </div>
-            <div class="col-10 col-xl-5 d-flex flex-wrap align-content-center" data-aos="fade-up">
-                <h2 class="my-5">Que es Tesoros?</h2>
-                <p>¿Quienes somos? <br><br>
-                    Mi nombre es Valentina , soy psicóloga de profesión y tengo una familia compuesta por 4 hermosos hijos, 1 hombre y 3 chicas, pertenecemos a la Iglesia de Jesucristo De los Santos de los últimos días , y junto con mi esposo hemos creado Modesty inspirados en nuestras 3 hijas a quienes les encanta vestirse bien. <br> 
-                    Modesty nace debido a una necesidad que he observado en las mujeres a mi alrededor, querer vestirse linda pero a la vez modesta, una combinación difícil de encontrar fácilmente hoy en día. <br>
-                    Se lo desafiante que es encontrar ropa que cumpla con nuestros gustos, normas y expectativas, normalmente recorrimos muchos lugares para encontrar una prenda que nos quede cómoda, que nos haga sentir bien y que además esté a nuestro alcance. <br>
-                    Nuestra marca busca representar este estilo de vestir, queremos satisfacer los gustos de cada mujer, aunque sabemos que esto puede ser complejo, ya que somos todas tan distintas, pero aún así aceptamos el desafío de poder lograrlo, con el tiempo y a medida que vayamos escuchando sus opiniones y sugerencias.
-                    <br><br>
-                    También hemos pensado en las más pequeñitas, a ellas también les encanta lucir bien , por lo tanto estaremos trayendo vestidos espacialmente para ellas. 
-                    Nuestra política de atención al cliente busca que quedes feliz con tu compra, por lo tanto estamos dispuestos a brindarte toda la información para que compres con confianza y rapidez. Te orientamos en el todo el proceso  de tu compra, respondiendo todas tus inquietudes y escuchando todas tus sugerencias.
-                </p>
+            <div class="col-10 mb-5">
+                <div class="form-group" data-aos="fade-up">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Ingresa tu Email aqui *" required="required" data-error="Valid email is required.">
+                </div>
             </div>
-
+            <div class="col-10 mb-5">
+                <div class="form-group" data-aos="fade-down">
+                    <label for="form_message">Comentarios *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Escribe tu comentario aqui" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 btn-send">
+                <div>
+                    <input type="submit" class="btn btn-success btn-send pt-2 btn-block" value="Enviar">
+                </div>
+            </div>
         </div>
     </div>
+
 
     <footer class="footer text-center text-lg-start">
         <div class="container p-4">
