@@ -1,26 +1,6 @@
 * {
   list-style-type: none;
   text-decoration: none;
-  font-family: "MerriweatherSans"; }
-
-@font-face {
-  font-family: "Cinzel";
-  src: url("../fonts/Cinzel-Variable.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "MerriweatherSans";
-  src: url("../fonts/MerriweatherSans.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Quattrocento";
-  src: url("../fonts/Quattrocento.ttf") format("truetype");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Tangerine";
-  src: url("../fonts/Tangerine.ttf") format("truetype");
   font-weight: 500; }
 
 a {
@@ -29,28 +9,13 @@ a {
   text-decoration: none; }
   a.c-white, a.c-white:hover {
     text-decoration: none;
-    color: #F9F7F7; }
-
-h1.textTitle {
-  font-family: "Cinzel";
-  font-size: 72px; }
-
-h2.textSubtitle {
-  font-family: "Cinzel";
-  font-size: 24px; }
-
-p.textStyle {
-  font-family: "Quattrocento"; }
-
-p.textSubtitle {
-  font-family: "Cinzel";
-  font-size: 24px; }
+    color: white; }
 
 /* BACKGROUND */
 body {
-  background: radial-gradient(circle, #f9f7f7 0%, #3f72af 80%, #3f72af 100%);
+  background: radial-gradient(circle, #f9f7f7 0%, rgba(0, 0, 0, 0.426208) 60%, #3f72af 100%);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
   height: 100vh; }
 
 @keyframes gradient {
@@ -76,25 +41,21 @@ footer {
     color: none; }
 
 /* Estilos Personalizados */
-.card-fade, .card-fade-black {
-  background: rgba(255, 255, 255, 0.1);
+.card-fade {
+  background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18); }
 
-.card-fade-black {
-  background: rgba(0, 0, 0, 0.5); }
-
 .img-car, .car-size {
-  opacity: 0.7;
+  opacity: 0.5;
   background-color: black; }
 
-.text-blue, .text-blue2 {
+.text-blue {
   color: #3F72AF;
-  font-weight: 700;
-  font-family: "Quattrocento"; }
+  font-weight: 700; }
 
 .no-bold {
   font-weight: 400; }
@@ -119,10 +80,6 @@ footer {
 
 .u-color {
   color: #1363DF; }
-
-.text-blue2 {
-  font-family: "Cinzel";
-  font-weight: 700; }
 
 /* Espaciados */
 .content-index {
@@ -227,15 +184,6 @@ li.timeline-item::before {
     display: none; } }
 
 @media (max-width: 768px) {
-  h1.textTitle {
-    font-size: 36px; }
-  h2.textSubtitle {
-    font-family: "Cinzel";
-    font-size: 36px; }
-  p.textStyle {
-    font-size: 16px; }
-  p.textSubtitle {
-    font-size: 16px; }
   .car-size {
     overflow: hidden; }
   .img-car {

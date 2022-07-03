@@ -1,0 +1,194 @@
+* {
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 500; }
+  
+  a {
+    list-style-type: none;
+    color: black;
+    text-decoration: none; }
+    a.c-white, a.c-white:hover {
+      text-decoration: none;
+      color: white; }
+  
+  /* BACKGROUND */
+  body {
+    background: radial-gradient(circle, #f9f7f7 0%, rgba(0, 0, 0, 0.426208) 60%, #3f72af 100%);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh; }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%; }
+    50% {
+      background-position: 100% 50%; }
+    100% {
+      background-position: 0% 50%; } }
+  
+  /* NavBar */
+  .navbar {
+    background-color: #F9F7F7 !important;
+    box-shadow: 5px 5px 10px #666666,
+   -5px -5px 10px #ffffff;
+    position: fixed;
+    width: 100%; }
+  
+  /* Footer */
+  footer {
+    background: #112D4E;
+    color: #F9F7F7; }
+    footer a, footer a:hover, footer a:visited {
+      color: none; }
+  
+  /* Estilos Personalizados */
+  .card-fade {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18); }
+  
+  .img-car, .car-size {
+    opacity: 0.5;
+    background-color: black; }
+  
+  .text-blue {
+    color: #3F72AF;
+    font-weight: 700; }
+  
+  .no-bold {
+    font-weight: 400; }
+  
+  .opacity {
+    overflow: hidden;
+    opacity: 0.5;
+    background-color: black; }
+  
+  .text-constru {
+    text-shadow: 1px 1px black; }
+  
+  .text-big {
+    font-size: 18px; }
+  
+  .bg-black {
+    background-color: black; }
+  
+  .gal-img:hover {
+    transition: all 0.5s;
+    transform: scale(1.03, 1.03); }
+  
+  .u-color {
+    color: #1363DF; }
+  
+  /* Espaciados */
+  .content-index {
+    margin: 80px 0; }
+  
+  .jcse {
+    justify-content: space-evenly; }
+  
+  .f-center {
+    margin: 0 auto; }
+  
+  #img-index {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 50%; }
+  
+  .pos-f {
+    position: fixed; }
+  
+  .nav-margin {
+    margin-top: 66px; }
+  
+  .video-background-holder video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+  
+  .video-background-overlay {
+    position: relative;
+    z-index: 2;
+    height: 100vh; }
+  
+  .card-comments {
+    background-color: #F9F7F7;
+    padding: 25px;
+    margin-bottom: 10px; }
+    .card-comments.user-image {
+      border: 3px solid black;
+      padding: 2px; }
+  
+  /*Abadia history timeline*/
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 1.5rem; }
+    ul.timeline.li {
+      margin: 20px 0; }
+      ul.timeline.li div {
+        border-top: 0.5rem solid transparent;
+        border-right: 0.5rem solid #F9F7F7;
+        border-bottom: 0.5rem solid transparent;
+        display: block;
+        position: absolute;
+        left: 2rem; }
+  
+  ul.timeline:before {
+    content: ' ';
+    background: #F9F7F7;
+    display: inline-block;
+    position: absolute;
+    left: 16px;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    border-radius: 1rem; }
+  
+  li.timeline-item::before {
+    content: ' ';
+    background: #F9F7F7;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #F9F7F7;
+    left: 11px;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
+  
+  /* FORM */
+  .bg-image {
+    background-image: url("../images/abadia3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  
+  @media (max-width: 1200px) {
+    #img-index {
+      width: auto;
+      float: none; }
+    .pos-f {
+      display: none; } }
+  
+  @media (max-width: 768px) {
+    .car-size {
+      overflow: hidden; }
+    .img-car {
+      height: 256px; }
+    .text-big {
+      font-size: 14px; } }
+  
