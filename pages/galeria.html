@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="description" content="Galeria de imagenes del Mont Saint Michel. Revisa aqui nuestra galeria de fotos, junto con descripciones y detalles historicos de cada una de ellas.">
+    <meta name="keywords" content="mont saint michel images, abbey of mont saint michel images, mont saint michel pictures, france, tourism, normandy">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/jquery.slim.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animate On Scroll & FontAwesome -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <script src="https://kit.fontawesome.com/1f2efb6c54.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <title>Galeria - Mt. St. Michel</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+
+    <!-- Nav para Desktop -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light d-none d-xl-flex">
+        <div class="collapse navbar-collapse jcse" id="navbarSupportedContent">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo2.png" alt="Mount Logo" class="logo" width="80px" height="auto"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="../index.html">Inicio</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./abadia.html">Abadía</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./hospedaje.html">Hospedaje</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./construccion.html">Construcción</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link mx-4" href="./galeria.html">Galería</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Nav para Mobile -->
+    <nav class="navbar sticky-top navbar-expand-xl navbar-light bg-light d-xl-none">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/images/logo2.png" alt="Mount Logo" class="logo" width="80px" height="auto"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./abadia.html">Abadía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./hospedaje.html">Hospedaje</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-4" href="./construccion.html">Construcción</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link mx-4" href="./galeria.html">Galería</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="nav-margin text-dark">
+        <h1 class="col-12 text-center pt-5">Galeria de imagenes del Mount Saint-Michel</h1>
+    </div>
+
+    <!-- Container galeria (2 Rows w/ 3 Cols each w/ 2 Imgs per Col) -->
+    <div class="container-fluid px-5 col-xl-10">
+        <div class="row pt-5 text-down-size">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalConstruccion">
+                    <img src="../assets/images/gal1.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Construcción</h5>
+                        <p class="card-text">Sabias que el Mont Saint Michel fue construido a lo largo de 1300 años?</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalSueno">
+                    <img src="../assets/images/gal2.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">La idea surgió de un sueño</h5>
+                        <p class="card-text">Esta maravilla arquitectónica se concibió en un sueño.</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalArquitectura">
+                    <img src="../assets/images/gal3.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">La estructura arquitectónica representa la jerarquía feudal</h5>
+                        <p class="card-text">Dios está en la cima, seguido de la abadía</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalInglaterra">
+                    <img src="../assets/images/gal4.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title h-auto">Los ingleses nunca pudieron conquistarlo</h5>
+                        <p class="card-text h-auto">La abadía resistió un asedio de treinta años, su fuerte defensa contra Inglaterra inspiró a Juana de Arco.</p>
+                        <p class="card-text h-auto">Haz click para leer mas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalPrision">
+                    <img src="../assets/images/gal5.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Mont Saint Michel fue también una prisión</h5>
+                        <p class="card-text">La abadía albergó a algunos de los principales presos políticos de la Revolución Francesa del siglo XVIII</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalLugar">
+                    <img src="../assets/images/gal6.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Es un lugar de peregrinación muy importante</h5>
+                        <p class="card-text">Sin el puente que interconectaba el continente y la isla, era una aventura arriesgada cruzar la bahía, ya que también había muchos depósitos de arenas movedizas en la zona.</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalReplica">
+                    <img src="../assets/images/gal7.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Mont Saint Michel tiene una réplica</h5>
+                        <p class="card-text">Mont Saint Michel de Penzance, que está situada en el lado inglés del canal.</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalCastillo">
+                    <img src="../assets/images/gal8.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Ha inspirado muchos de los castillos que vemos en las películas</h5>
+                        <p class="card-text">Desde Enredados hasta Minas Tirith, revisa los castillos que se inspiraron en la abadia</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalMarea">
+                    <img src="../assets/images/gal9.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Hogar de las mayores mareas de Europa</h5>
+                        <p class="card-text">Sabias que la marea de la abadía puede llegar hasta los 14 metros?</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalUnesco">
+                    <img src="../assets/images/gal10.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Patrimonio de UNESCO</h5>
+                        <p class="card-text">Mont Saint Michel y la bahía están inscritos en el Patrimonio Mundial de UNESCO desde 1979.</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalRestaurant">
+                    <img src="../assets/images/gal11.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Du Guesclin</h5>
+                        <p class="card-text">Con una hermosa vista panorámica de la bahía y una decoración clásica, uno de los mejores ambientes aqui.</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+                <div class="text-white gal-img-container text-center bg-black rounded mb-4" data-toggle="modal" data-target="#modalCamping">
+                    <img src="../assets/images/gal12.jpg" class="gal-img w-100 shadow-1-strong rounded" alt=""/>
+                    <div class="card-img-overlay gal-txt align-items-center">
+                        <h5 class="card-title">Camping le Balcon de la Baie</h5>
+                        <p class="card-text">Situado entre la bahía de Mont Saint Michel y Saint-Malo, el Camping le Balcon de la Baie está a 10 minutos en coche del mar.</p>
+                        <p class="card-text">Haz click para leer mas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modals -->
+    <div class="modal fade" id="modalConstruccion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>La abadía de Mont Saint Michel, situada en un islote que queda aislado del continente durante las mareas altas, comenzó a levantarse en el año 708 y fue construida por 1300 años por varias generaciones de obreros que trabajaron y sobrevivieron en este inhóspito lugar.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSueno" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>El obispo Aubert de Avranches fue visitado en sueños por el arcángel Miguel. El Arcángel le ordenó que construyera una iglesia en la isla rocosa situada en la desembocadura del río Couesnon. El obispo no hizo caso a sus palabras la primera vez, así que el arcángel le visitó de nuevo. Fue luego de esta segunda visita que el obispo le tomó en serio y comenzó la construcción en el lugar.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalArquitectura" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>La construcción de Mont Saint Michael representa la jerarquía feudal vigente en la época. Dios está, por supuesto, en la cima seguido de la abadía y el monasterio. Debajo se encuentran las grandes salas, luego los almacenes y las viviendas y, en la parte inferior, casi fuera de las murallas, se sitúan las viviendas de los pescadores y de los agricultores.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalInglaterra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>Las fuertes fortificaciones y las altas mareas hicieron imposible que los ingleses conquistaran Mont Saint Michel durante la Guerra de los Cien Años. La abadía resistió un asedio de treinta años y su fuerte defensa contra Inglaterra inspiró también a Juana de Arco.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <video class="w-75 text-center gal-int-img" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                <source src="../assets/videos/galint-4.mp4" type="video/mp4">
+                            </video>
+                            <!-- <video class="w-75 text-center gal-int-img" src="../assets/videos/galint-4.mp4" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPrision" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>El uso de la abadía sufrió un cambio durante la Revolución Francesa en el siglo XVIII, cuando apenas quedaban monjes. La abadía albergó a algunos de los principales presos políticos de la Revolución, pero, gracias a que muchas personas influyentes hicieron campaña para preservar el patrimonio arquitectónico, en 1863 la prisión fue cerrada.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-5.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLugar" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>Mont Saint Michel es conocido por ser un destino turístico, pero también es un lugar de peregrinación muy importante. Desde el siglo X, muchos peregrinos acudían a la abadía atravesando rutas peligrosas y las arenas que cubren la bahía en marea baja. Sin el puente que interconectaba el continente y la isla, era una aventura arriesgada cruzar la bahía, ya que también había muchos depósitos de arenas movedizas en la zona.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <video class="w-75 text-center gal-int-img" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                <source src="../assets/videos/peregrinos.mp4" type="video/mp4">
+                            </video>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalReplica" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>Guillermo el Conquistador, duque de Normandía, creó una réplica de Mont Saint Michel que se llamó Mont Saint Michel de Penzance y que está situada en el lado inglés del canal. Esta réplica es mucho más pequeña y también está situada en una isla mareal.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalCastillo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>El icónico castillo de la película de animación Enredados se inspiró en Mont Saint Michel. También fue la inspiración para Minas Tirith, la capital de Gondor en El Señor de los Anillos.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-8.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalMarea" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>Las mareas de Mont Saint Michel alcanzan casi 14 metros, siendo las más altas de Europa. En los primeros tiempos, nadie podía cruzar durante las mareas altas y la única forma de acceder a la isla era una calzada de mareas. En los últimos tiempos, se ha construido un camino más estable para facilitar los desplazamientos en todo momento.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-9.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalUnesco" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>Mont Saint Michel y la bahía que lo rodea están inscritos en el Patrimonio Mundial de la UNESCO desde 1979.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-10.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalRestaurant" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>Si buscas cocina local y especialidades regionales, el Hotel Du Guesclin es el lugar que debes visitar. Con una hermosa vista panorámica de la bahía circundante y una decoración blanca clásica, este restaurante tiene uno de los mejores ambientes de esta pequeña isla medieval. Dispone de tres menús que se adaptan a todos los gustos y presupuestos.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-11.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalCamping" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-10 col-lg-5 my-5 mx-auto text-center gal-img-content align-it-center py-5">
+                            <p>Situado entre la bahía de Mont Saint Michel y Saint-Malo, el Camping le Balcon de la Baie está a 10 minutos en coche del mar. El establecimiento ofrece un entorno de casas móviles rodeadas de frondosos árboles, una piscina climatizada y un parque infantil. Es la escapada perfecta del ajetreo de la ciudad.</p>
+                        </div>
+                        <div class="col-12 col-lg-6 my-5 text-center">
+                            <img class="w-75 text-center gal-int-img" src="../assets/images/galint-12.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Mount Saint-Michel</h6>
+                        <p>
+                            Este sitio no es el sitio web oficial de Mont Saint Michel, si desea visitar el sitio oficial, dirijase <a href="https://www.bienvenueaumontsaintmichel.com/es" class="u-color">aquí</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contenido</h6>
+                        <p><a href="./abadia.html" class="text-white">Abadía</a></p>
+                        <p><a href="./hospedaje.html" class="text-white">Hospedaje</a></p>
+                        <p><a href="./construccion.html" class="text-white">Construcción</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                        <p><i class="fas fa-envelope mr-3"></i>info@gmail.com</p>
+                        <p><i class="fas fa-phone mr-3"></i>+33 (0)2 14 13 20 15</p>
+                        <p><i class="fas fa-home mr-3"></i>Le Bas Pays, 50170</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <div class="p-3">
+                            © 2020 Copyright:
+                            <a class="text-white" href="../index.html">Mont Saint-Michel</a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <a href="https://m.facebook.com/profile.php?id=106078799423793" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/visitlemont/?hl=es" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fa-brands fa-instagram"></i></i></a>
+                        <a href="https://www.youtube.com/watch?v=JeFNU2Paics&ab_channel=NationalGeographicEspa%C3%B1a" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fa-brands fa-youtube"></i></i></a>
+                        <a href="https://web.whatsapp.com/" class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fa-brands fa-whatsapp"></i></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

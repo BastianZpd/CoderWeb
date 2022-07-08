@@ -1,0 +1,78 @@
+@include font("Cinzel", "../fonts/Cinzel-Variable", 500);
+@include font("MerriweatherSans", "../fonts/MerriweatherSans", 500);
+@include font("Quattrocento", "../fonts/Quattrocento", 500);
+@include font("Tangerine", "../fonts/Tangerine", 500);
+
+// Fonts & Sizes
+a {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+
+    &.c-white, &.c-white:hover {
+        text-decoration: none;
+        color: $colorWhite;
+    }
+}
+
+h1 {
+    &.textTitle {
+        font-family: $textTitleFont;
+        font-size: $textTitleSize;
+    }
+}
+
+h2 {
+    &.textSubtitle {
+        font-family: $textTitleFont;
+        font-size: $textSubtitleSize; 
+    }
+}
+
+p {
+    &.textStyle {
+        font-family: $textBody;
+    }
+    &.textSubtitle {
+        font-family: $textTitleFont;
+        font-size: $textSubtitleSize;
+    }
+}
+
+.text-down-size {
+    font-size: map-get($font-sizes, "normal");
+}
+
+.text-blue {
+    color: $colorPrincipal;
+    font-weight: $textBold;
+    font-family: $textBody;
+}
+
+.no-bold {
+    font-weight: $textNoBold;
+}
+
+.text-blue {
+    color: $colorPrincipal;
+    font-weight: $textBold;
+    font-family: $textBody;
+}
+
+.text-constru {
+    text-shadow: 1px 1px $colorBlack;
+}
+
+.text-big {
+    font-size: map-get($font-sizes, "large");
+}
+
+.text-blue2 {
+    @extend .text-blue;
+    font-family: $textTitleFont;
+    font-weight: $textBold;
+}
+
+.no-bold {
+    font-weight: $textNoBold;
+}

@@ -1,0 +1,41 @@
+@include breakpoint(desktop) {
+    #img-index {
+        width: auto;
+        float: none;
+    }  
+
+    .pos-f {
+        display: none;
+    }
+}
+
+@include breakpoint(tablet) {
+    $textTitleSize: 36px;
+    $textSubtitleSize: 16px;
+
+    h1 {
+        &.textTitle {
+            font-size: $textTitleSize;
+        }
+    }
+
+    h2 {
+        &.textSubtitle {
+            font-family: $textTitleFont;
+            font-size: $textTitleSize; 
+        }
+    }    
+    
+    p {
+        &.textStyle {
+            font-size: $textSubtitleSize;
+        }
+        &.textSubtitle {
+            font-size: $textSubtitleSize;
+        }
+    }
+
+    .text-big {
+        font-size: 14px;
+    }
+}
