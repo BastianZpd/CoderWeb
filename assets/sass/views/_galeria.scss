@@ -1,0 +1,50 @@
+.gal-img-container {
+    position: relative;
+
+    &:hover {
+        transition: all 0.5s;
+        transform: scale(1.03, 1.03);
+    }
+
+    .gal-img {
+        z-index: map-get($z-index, "mid-front");
+    
+        &:hover {
+            transition: all 0.5s;
+            opacity: $opacity - 0.3;
+            z-index: map-get($z-index, "mid-back"); 
+            cursor: pointer;
+        }
+    }
+
+    .gal-txt {
+        position: absolute;
+        z-index: map-get($z-index, "back");
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+    
+        &:hover {
+            z-index: map-get($z-index, "front");
+        }
+    }
+}
+
+// Modals
+
+.row {
+    .gal-int-img {
+        @extend .gal-img-content;
+        &:hover {
+            transition: all 0.5s;
+            transform: scale(1.2, 1.2);
+        }
+    }
+    
+    .gal-img-content {
+        border-radius: 5px;
+        background: $colorWhite;
+        box-shadow:  5px 5px 20px $colorPrincipal,
+        -5px -5px 20px $colorWhite;
+    }
+}
