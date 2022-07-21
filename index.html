@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
 
-    <meta name="description" content="El Mont-Saint-Michel, en la región de Normandía, al norte de Francia, tiene la particularidad de ser un islote rocoso rodeado de una maravillosa bahía, escenario de las mayores mareas de Europa.">
-    <meta name="keywords" content="mont saint michel, mont st michel, mont michel, saint michel, abbey of mont saint michel, france, tourism, normandy">
-
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <script src="./bootstrap/js/jquery.slim.min.js"></script>
@@ -23,6 +20,7 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
 <body>
+
     <!-- Nav para Desktop -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light d-none d-xl-flex">
         <div class="collapse navbar-collapse jcse" id="navbarSupportedContent">
@@ -89,7 +87,7 @@
     </nav>
 
     <!-- Carousel -->
-    <div class="bd-example d-none d-md-block">
+    <div class="bd-example">
         <div id="carouselExampleCaptions" class="carousel nav-margin slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -102,7 +100,7 @@
                     <img class="img-car d-block w-100" alt="Historia de la abadía" src="./assets/images/banner1.jpg" data-holder-rendered="true">
                     <div class="carousel-caption d-none d-md-block">
                         <a class="c-white" href="./pages/abadia.html">                        
-                            <h2>Historia de la abadía</h2>
+                            <h3>Historia de la abadía</h3>
                             <p>Descubre mas sobre la historia de la abadía que ha servido de inspiración para muchas obras y películas.</p>
                         </a>
                     </div>
@@ -111,7 +109,7 @@
                     <img class="img-car d-block w-100" alt="Estadía" src="./assets/images/banner2.jpg" data-holder-rendered="true">
                     <div class="carousel-caption d-none d-md-block">
                         <a class="c-white" href="./pages/hospedaje.html">                        
-                            <h2>Estadía y hospedaje</h2>
+                            <h3>Estadía y hospedaje</h3>
                             <p>¿Sabías que puedes hospedarte en la misma abadía?, averigua cómo, aquí.</p>
                         </a>
                     </div>
@@ -120,7 +118,7 @@
                     <img class="img-car d-block w-100" alt="Construcción" src="./assets/images/banner3.jpg" data-holder-rendered="true">
                     <div class="carousel-caption d-none d-md-block">
                         <a class="c-white" href="./pages/construccion.html">                        
-                            <h2>Construcción de la abadía</h2>
+                            <h3>Construcción de la abadía</h3>
                             <p>¿Quieres saber cómo se construyó la abadía Mount Saint Michel?, descúbrelo aquí.</p>
                         </a>
                     </div>
@@ -129,7 +127,7 @@
                     <img class=" img-car d-block w-100" alt="Galería" src="./assets/images/banner4.jpg" data-holder-rendered="true">
                     <div class="carousel-caption d-none d-md-block">
                         <a class="c-white" href="./pages/galeria.html">                        
-                            <h2>Galería de fotos</h2>
+                            <h3>Galería de fotos</h3>
                             <p>Revisa nuestra galería para ver mas imagenes de este hermoso lugar!</p>
                         </a>
                     </div>
@@ -146,17 +144,13 @@
         </div>
     </div>
 
-    <div class="my-5 text-dark">
-        <h1 class="col-12 text-center pt-5">Mont Saint-Michel, historia, inspiración e ingenio.</h1>
-    </div>
-
     <!-- Cards -->
     <div class="container-fluid">
         <div class="row jcse mt-5">
             <div class="card card-fade col-10 col-md-5 col-xl-3 mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-delay="300">
-                <img src="./assets/images/abadia.jpg" class="card-img-top mt-3" alt="Abadia">
+                <img src="./assets/images/abadia.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
-                    <h2 class="card-title">Abadía</h2>
+                    <h5 class="card-title">Abadía</h5>
                     <p class="card-text">Aunque actualmente es una isla, el Monte ocupaba tierra firme en tiempos prehistóricos. Tras la subida del nivel del mar, la erosión modeló el paisaje costero y aparecieron en la bahía varios afloramientos de granito que resistieron mejor el desgaste del océano que las rocas circundantes.<br>
                     Averigua mas sobre la historia de la Abadía aquí!
                     </p>
@@ -164,9 +158,9 @@
                 </div>
             </div>    
             <div class="card card-fade col-10 col-md-5 col-xl-3 mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-delay="300">
-                <img src="./assets/images/hospedaje.jpg" class="card-img-top mt-3" alt="Hospedaje">
+                <img src="./assets/images/hospedaje.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
-                    <h2 class="card-title">Hospedaje</h2>
+                    <h5 class="card-title">Hospedaje</h5>
                     <p class="card-text">El pueblo medieval y la famosa abadía benedictina atraen cada año a 3 millones de viajeros. Es casi imposible explorar la isla en un día, por lo que alojarse en los hoteles cercanos a Mont Saint Michel es una opción ideal. <br>
                         Consulta nuestra lista de hoteles más importantes, y elige el que más te convenga.
                     </p>
@@ -174,9 +168,9 @@
                 </div>
             </div> 
             <div class="card card-fade col-10 col-xl-3 mb-5" style="width: 18rem;" data-aos="fade-up" data-aos-delay="300">
-                <img src="./assets/images/constru.jpg" class="card-img-top mt-3" alt="Construccion">
+                <img src="./assets/images/constru.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
-                    <h2 class="card-title">Construcción</h2>
+                    <h5 class="card-title">Construcción</h5>
                     <p class="card-text">Construida a lo largo de 1300 años, la abadía de Mont Saint Michel se alza sobre una ensenada de granito rodeada de arenas movedizas.<br>
                         La abadía continúa inspirando a muchos, Si has visto El Señor de los Anillos o la película Enredados, debes saber que sus creadores se inspiraron en Mont Saint Michel.</p>
                     <a href="./pages/construccion.html" class="btn btn-primary">Aprender mas</a>
@@ -188,7 +182,7 @@
     <!-- Img + Flex Text -->
     <div class="container-fluid col-10 f-center">
         <div class="content-index">
-            <img src="./assets/images/abadia2.jpg" class="img-fluid" id="img-index" alt="Abadia"  data-aos="fade-up" data-aos-delay="200">
+            <img src="./assets/images/abadia2.jpg" class="img-fluid" id="img-index" alt="Responsive image"  data-aos="fade-up" data-aos-delay="200">
             <p class="text-justify no-bold"  data-aos="fade-up" data-aos-delay="400">Mont Saint Michel es un pequeño municipio isleño de apenas 240 hectáreas situado frente a la costa de Normandía. Cuenta con una gran riqueza histórica y cultural y es uno de los destinos más populares de Francia. Este sitio ha cautivado a los visitantes durante mucho tiempo. La historia de cómo el monte se convirtió en un importante lugar de peregrinación cristiana se remonta a principios del siglo VIII. En la actualidad, ya el mero atractivo visual de Mont Saint Michel lo convierte en una visita obligada en Francia. <br><br>
         
             Originalmente llamado Mont Tombe, este municipio tiene una interesante historia de origen. Tras tener una visión del arcángel San Miguel, Saint-Aubert, obispo de Avranches, creó el Mont Saint Michel en el año 708. Tras esta tercera y última visión, decidió construir un oratorio en honor del personaje divino. Durante su construcción, el obispo de Avranches envió a dos religiosos a buscar los restos de Saint-Michel. Trajeron una parte de un muro y una capa roja, así como un trozo de mármol en el que el arcángel había puesto el pie. <br>
@@ -214,21 +208,21 @@
 
         <div class="row jcse">
             <div class="card card-fade col-10 col-md-5 col-xl-3 mb-3" style="width: 18rem;" data-aos="fade-up" data-aos-delay="200">
-                <img src="./assets/images/abadia3.jpg" class="card-img-top mt-3" alt="Abadia">
+                <img src="./assets/images/abadia3.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Abadía de Mont Saint Michel</h5>
                     <p class="card-text">La abadía del Mont Saint Michel es uno de los lugares más impresionantes de Francia. Durante siglos, ha sido el principal destino de peregrinación de Europa y hoy esta isla sagrada es Patrimonio de la Humanidad de la UNESCO.</p>
                 </div>
             </div>
             <div class="card card-fade col-10 col-md-5 col-xl-3 mb-3" style="width: 18rem;" data-aos="fade-up" data-aos-delay="400">
-                <img src="./assets/images/saintpierre.jpg" class="card-img-top mt-3" alt="Saint Pierre">
+                <img src="./assets/images/saintpierre.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Iglesia Saint Pierre</h5>
                     <p class="card-text">Aléjate de la multitud para presenciar una pequeña y pintoresca capilla situada a media altura de la abadía para vivir una experiencia increíble.</p>
                 </div>
             </div>
             <div class="card card-fade col-10 col-xl-3 mb-3" style="width: 18rem;" data-aos="fade-up" data-aos-delay="600">
-                <img src="./assets/images/saintaubert.jpg" class="card-img-top mt-3" alt="Saint Aubert">
+                <img src="./assets/images/saintaubert.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">La Capilla Saint-Aubert</h5>
                     <p class="card-text">Si buscas explorar lugares más escondidos y tranquilos para visitar, La Chapelle-Saint-Aubert es el lugar ideal para ti. Las mareas bajas son el mejor momento para visitarla en familia.</p>
@@ -238,21 +232,21 @@
 
         <div class="row jcse mb-5">
             <div class="card card-fade col-10 col-xl-3 mb-3" style="width: 18rem;" data-aos="fade-up" data-aos-delay="200">
-                <img src="./assets/images/granderue.jpg" class="card-img-top mt-3" alt="Grande Rue">
+                <img src="./assets/images/granderue.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">La Grande Rue</h5>
                     <p class="card-text">Transpórtate instantáneamente a una ciudad francesa de cuento de hadas mientras visitas las impresionantes calles de La Grande Rue.</p>
                 </div>
             </div>
             <div class="card card-fade col-10 col-md-5 col-xl-3 mb-3" style="width: 18rem;" data-aos="fade-up" data-aos-delay="400">
-                <img src="./assets/images/barrage.jpg" class="card-img-top mt-3" alt="Barrage">
+                <img src="./assets/images/barrage.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Barrage sur le Couesnon</h5>
                     <p class="card-text">Disfruta de las vistas o haz un relajado picnic en Mont Saint Michel visitando Barrage sur le Couesnon, una presa de corto recorrido hecha de hormigón y metal.</p>
                 </div>
             </div>
             <div class="card card-fade col-10 col-md-5 col-xl-3 mb-3" style="width: 18rem;" data-aos="fade-up" data-aos-delay="600">
-                <img src="./assets/images/porteduroy.jpg" class="card-img-top mt-3" alt="Porte du Roy">
+                <img src="./assets/images/porteduroy.jpg" class="card-img-top mt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">La Porte du Roy</h5>
                     <p class="card-text">Tómate un momento para apreciar las sencillas pero hermosas puertas de ladrillo mientras te diriges al Mont Saint Michel.</p>
