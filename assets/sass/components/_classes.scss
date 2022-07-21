@@ -1,0 +1,43 @@
+.opacity {
+    overflow: hidden;
+    opacity: $opacity;
+    background-color: $colorBlack;
+}
+
+.bg-black {
+    background-color: $colorBlack;
+}
+
+.u-color {
+    color: $colorSecundario;
+}
+
+/* Espaciados */
+.content-index {
+    margin: 80px 0;
+}
+
+.jcse {
+    justify-content: space-evenly;
+}
+
+.f-center {
+    margin: 0 auto;
+}
+
+#img-index {
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 50%;
+} 
+
+.pos-f {
+    position: fixed;
+}
+
+.nav-margin{
+    margin-top: 66px;
+}
+
+
+

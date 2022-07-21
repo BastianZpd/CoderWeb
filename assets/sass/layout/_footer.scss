@@ -1,0 +1,8 @@
+footer{
+    background: $colorDark;
+    color: $colorWhite;
+
+    & a, & a:hover, & a:visited {
+        color: none;
+    }
+}

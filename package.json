@@ -5,7 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+<<<<<<< HEAD
     "build-sass": "node-sass --include-path scss assets/sass/styles.scss assets/css/styles.css",
+=======
+    "build-sass": "node-sass --include-path scss assets/sass/main.scss assets/css/styles.css",
+    "build-scss": "node-sass --output-style compressed assets/sass/main.scss assets/css/styles.css",
+>>>>>>> SASS
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "keywords": [],
@@ -16,4 +21,8 @@
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.18"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> SASS
